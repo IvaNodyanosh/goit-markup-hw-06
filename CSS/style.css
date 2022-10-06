@@ -938,13 +938,14 @@ header ul {
 
 }
 
+/* 
 .form-parts input:not(:placeholder-shown) {
     border: 1px solid #2196F3;
 }
 
 .form-parts input:not(:placeholder-shown)+svg {
     fill: var(--accent-color);
-}
+} */
 
 .form-parts input+svg {
     transition-property: fill;
@@ -987,9 +988,9 @@ header ul {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.comment-box>textarea:not(:placeholder-shown) {
+/* .comment-box>textarea:not(:placeholder-shown) {
     border: 1px solid #2196F3;
-}
+} */
 
 .comment-box:hover textarea,
 .comment-box:focus textarea {
@@ -1022,11 +1023,11 @@ header ul {
     display: flex;
 }
 
-.form-parts svg {
+/* .form-parts svg {
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .check-svg {
     position: absolute;
