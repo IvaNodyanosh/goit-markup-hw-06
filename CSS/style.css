@@ -374,6 +374,13 @@ header ul {
     background-color: transparent;
     padding-left: 16px;
     color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    line-height: 1.25;
+    color: #FFFFFF;
 }
 
 .subscribe-box>input::placeholder {
@@ -400,6 +407,10 @@ header ul {
     align-items: center;
 }
 
+.subscribe-box>input:hover,
+.subscribe-box>input:focus {
+    border: 1px solid #2196F3;
+}
 
 
 
@@ -445,7 +456,7 @@ header ul {
 }
 
 
-.hero-container {}
+
 
 /* стилізація секції наші переваги */
 .advantages {
@@ -935,8 +946,11 @@ header ul {
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    font-size: 12px;
+    line-height: 1.2;
 }
+
+
 
 /* 
 .form-parts input:not(:placeholder-shown) {
@@ -992,8 +1006,8 @@ header ul {
     border: 1px solid #2196F3;
 } */
 
-.comment-box:hover textarea,
-.comment-box:focus textarea {
+.comment-box textarea:hover,
+.comment-box textarea:focus {
     border: 1px solid #2196F3;
 }
 
@@ -1042,13 +1056,13 @@ header ul {
     opacity: 1;
 }
 
-.form-parts:hover input,
-.form-parts:focus input {
+.form-parts input:hover,
+.form-parts input:focus {
     border: 1px solid #2196F3;
 }
 
-.form-parts:hover svg,
-.form-parts:focus svg {
+.form-parts input:hover+svg,
+.form-parts input:focus+svg {
     fill: var(--accent-color);
 }
 
